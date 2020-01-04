@@ -1,20 +1,9 @@
 <?php 
+   $user = 'u923853181_demo'; 
+    $password = 'h4ck3d321';
+    $db = 'u923853181_farmeasy';
+    $host = '156.67.222.190';
+    $port = 3306;
 
-$user = 'root';
-$password = 'root';
-$db = 'FarmEasy';
-$host = 'localhost';
-$port = 8889;
-
-$link = mysql_connect(
-   "$host:$port",
-   $user,
-   $password
-);
-
-$db_selected = mysql_select_db(
-   $db,
-   $link
-);
-
+    $link = mysqli_connect($host,$user,$password,$db);
 ?>
